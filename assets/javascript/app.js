@@ -2,7 +2,7 @@ $(function() {
     renderButtons(topics, 'pokemonButton', '#pokemonButtons');
 });
 
-var topics = ["bulbasaur", "charmander", "squirtle", "pidgey", "pikachu", "clefairy", "jigglypuff"];
+var topics = ["Bulbasaur", "Charmander", "Squirtle", "Pidgey", "Pikachu", "Clefairy", "Jigglypuff"];
 
 function renderButtons(topics, pokemonButton, pokemonButtons){   
     $(pokemonButtons).empty();
@@ -11,6 +11,8 @@ function renderButtons(topics, pokemonButton, pokemonButtons){
         
         var a = $('<button>');
         a.addClass(pokemonButton);
+        a.addClass("btn");
+        a.addClass("btn-success");
         a.attr('data-name', topics[i]);
         a.text(topics[i]);
         $(pokemonButtons).append(a);
